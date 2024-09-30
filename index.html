@@ -10,30 +10,62 @@
             font-family: Arial, sans-serif;
             margin: 20px;
             line-height: 1.6;
+            background-color: #F0F8FF; /* Warna latar belakang */
         }
-        h1, h3, h4 {
+        h1 {
             text-align: center;
+        }
+        h3, h4 {
+            text-align: center;
+            font-weight: bold; /* Mengubah huruf menjadi bold */
+            font-size: 24px; /* Ukuran font lebih besar */
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Mengatur agar item berada di atas */
+            margin-bottom: 20px; /* Menambah jarak antara container dan tabel */
         }
         img {
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            margin-left: 20px;
+            width: 150px; /* Ukuran gambar lebih kecil */
+            height: auto;
         }
         ul {
             list-style-type: none;
+            padding: 0; /* Menghilangkan padding */
         }
         table {
-            width: 100%;
+            width: 50%; /* Mengatur lebar tabel lebih kecil */
             border-collapse: collapse;
-            margin: 20px 0;
+            margin: 20px auto; /* Mengatur margin tabel agar center */
         }
         table, th, td {
-            border: 4 ;
-
+            border: 2px solid #000; /* Menambahkan border solid */
         }
         th, td {
             padding: 8px;
             text-align: center;
+        }
+        .note-bar {
+            text-align: center;
+            padding: 10px;
+            background-color: #B0E0E6; /* Warna biru pastel */
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .note-bar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #007BFF; /* Warna biru untuk button */
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .note-bar a:hover {
+            background-color: #0056b3; /* Warna biru lebih gelap saat hover */
         }
     </style>
 </head>
@@ -41,18 +73,25 @@
 
     <h1>Curriculum Vitae</h1>
 
-    <img src="IMG_9224.jpg" alt="Foto Naza Sapinath" width="200" height="200">
+    <div class="note-bar">
+        <p>Looking for my portfolio? <a href="portofolio.html">Click here to view my Portfolio</a></p>
+    </div>
 
-    <h3>Data Pribadi</h3>
-    <ul>
-        <li>Nama: Naza Sapinath Pratiwi</li>
-        <li>Tempat, Tanggal Lahir:Tasikmalaya, 30 Mei 2004</li>
-        <li>Jenis Kelamin: Perempuan</li>
-        <li>Agama: Islam</li>
-        <li>Alamat: Kost Pondok Savira</li>
-        <li>Nomor Telepon: 085797905163</li>
-        <li>Email: nazasapinath30@gmail.com</li>
-    </ul>
+    <div class="container">
+        <div>
+            <h3>Data Pribadi</h3>
+            <ul>
+                <li>Nama: Naza Sapinath Pratiwi</li>
+                <li>Tempat, Tanggal Lahir: Tasikmalaya, 30 Mei 2004</li>
+                <li>Jenis Kelamin: Perempuan</li>
+                <li>Agama: Islam</li>
+                <li>Alamat: Kost Pondok Savira</li>
+                <li>Nomor Telepon: 085797905163</li>
+                <li>Email: nazasapinath30@gmail.com</li>
+            </ul>
+        </div>
+        <img src="IMG_9224.jpg" alt="Foto Naza Sapinath">
+    </div>
 
     <h4>Riwayat Pendidikan</h4>
     <table>
